@@ -1,0 +1,94 @@
+---
+title: "Demo AE"
+author: "insert name here"
+format: html
+---
+
+For this ae, we'll use the **tidyverse** and **palmerpenguins** packages. Run the following code below. Further, name the code chunk `load-packages` using `#|`. 
+
+## Packages
+
+```{r}
+
+
+library(tidyverse)
+library(palmerpenguins) #The data set name is penguins
+```
+
+## Data
+
+The dataset we will visualize is called `penguins`. Let's `glimpse()` at it by filling in the `...`.
+
+```{r}
+#| label: glimpse
+
+glimpse(...) #insert the name of the data set
+
+```
+
+# Visualizing penguin weights - Demo
+
+## Useful links:
+
+https://ggplot2.tidyverse.org/reference/
+
+## Single variable
+
+::: callout-note
+Analyzing the a single variable is called **univariate** analysis.
+:::
+
+Create visualizations of the distribution of `weight`s of penguins.
+
+1.  Make a histogram by filling in the `...` with the appropriate arguments. Set an appropriate binwidth.
+
+```{r}
+#| label: histogram-weight
+#| eval: false
+
+penguins |>
+  ggplot( 
+       aes(x = ...)) + #type variable name here
+       ...(binwidth = 300) #type geom here
+
+```
+
+2.  Now, make a boxplot of `weight`s of penguins.
+
+```{r}
+#| label: boxplot-weight
+
+# insert code here
+
+```
+
+
+::: callout-important
+This would be a good time to render, commit, and push!
+:::
+
+
+-------------------------------- Answer for #2 Below
+
+3.  Add a theme to your boxplot! https://ggplot2.tidyverse.org/reference/ggtheme.html
+
+```{r}
+#| label: theme
+
+penguins |>
+  ggplot(
+    aes(x = body_mass_g)) + 
+    geom_boxplot() # add a plus  
+    # type theme here
+
+```
+
+
+## Extensions
+
+Make your own plot! Revist the geoms page here: https://ggplot2.tidyverse.org/reference/
+
+```{r}
+#| label: on-your-own
+
+```

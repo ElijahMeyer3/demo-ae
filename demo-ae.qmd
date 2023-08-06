@@ -1,19 +1,34 @@
 ---
 title: "Demo AE"
-author: "insert name here"
+  author: "insert name here"
 format: html
+editor: visual
 ---
 
-For this ae, we'll use the **tidyverse** and **palmerpenguins** packages. Run the following code below. Further, name the code chunk `load-packages` using `#|`. 
+For this ae, we'll use the **tidyverse** and **palmerpenguins** packages. Run the following code below. Further, name the code chunk `load-packages` using `#|`.
 
 ## Packages
 
 ```{r}
+#| label: packages
 
 
 library(tidyverse)
 library(palmerpenguins) #The data set name is penguins
 ```
+
+::: callout-note
+Analyzing the a single variable is called **univariate** analysis.
+:::
+
+Before we begin, let's render the document.....
+
+Why won't the document render? What does the error tell us? How do we fix the error?
+
+**Add Response**
+
+Now, fix the error and render the document. Are there messages / warnings from the packages code chunk that are not needed? Let's turn those off together as a class!
+
 
 ## Data
 
@@ -21,6 +36,7 @@ The dataset we will visualize is called `penguins`. Let's `glimpse()` at it by f
 
 ```{r}
 #| label: glimpse
+#| eval: false
 
 glimpse(...) #insert the name of the data set
 
@@ -62,11 +78,9 @@ penguins |>
 
 ```
 
-
 ::: callout-important
 This would be a good time to render, commit, and push!
 :::
-
 
 -------------------------------- Answer for #2 Below
 
@@ -83,6 +97,7 @@ penguins |>
 
 ```
 
+**Add Response**
 
 ## Extensions
 
